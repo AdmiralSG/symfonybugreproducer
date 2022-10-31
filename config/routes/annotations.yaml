@@ -1,0 +1,15 @@
+controllers:
+    resource: ../../src/Controller/
+    type: annotation
+    prefix:
+        es: '/es'
+        en: '/en' 
+        pt: '/pt'
+
+home_sin_locale:
+    path: /
+    controller: App\Controller\SeccionPublicaController::indexNoLocale
+    
+kernel:
+    resource: ../../src/Kernel.php
+    type: annotation
